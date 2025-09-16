@@ -35,3 +35,30 @@ print(T)
 
 d = {1:"uno",2:"dos",3:"tres"}
 print(d[2])
+
+#sentencias condicionales
+n1 = 5
+
+if n1 > 3:
+    print("5 es mayor que 3")
+elif n1==0:
+    print("xd")
+else:
+    print("menor que 3")
+
+#operadores ternarios
+vehiculo = "turismo" if n1 <= 3 else "moto"
+print(vehiculo)
+
+
+
+while n1 < 11:
+    print(n1)
+    n1 += 1
+
+n1 = 5
+while True:
+    print(n1)
+    n1 += 1
+    if n1 == 11:
+        break
