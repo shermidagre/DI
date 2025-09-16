@@ -32,3 +32,6 @@ T[3][2] = "random x3"
 print(T)
 
 #Diccionarios
+
+d = {1:"uno",2:"dos",3:"tres"}
+print(d[2])
