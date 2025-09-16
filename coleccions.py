@@ -62,3 +62,22 @@ while True:
     n1 += 1
     if n1 == 11:
         break
+
+
+# Bucle for in
+print("Listado de numeros con for in:")
+for i in range(11):
+    print(i)
+
+
+print("printeo de lista con for in :")
+
+listarandom= [1,2,34]
+for i in listarandom:
+        print(i)
+
+
+print("printeo de diccionario con for in:")
+
+for i in d:
+    print(i,":",d[i])
