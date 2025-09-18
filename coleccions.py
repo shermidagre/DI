@@ -72,7 +72,7 @@ for i in range(11):
 
 print("printeo de lista con for in :")
 
-listarandom= [1,2,34]
+listarandom= [1,2,34,4,75,7457,24,25,25,26,1,63,2,3,734,68,33,2,421,424,62,23757234,8]
 for i in listarandom:
         print(i)
 
@@ -81,3 +81,20 @@ print("printeo de diccionario con for in:")
 
 for i in d:
     print(i,":",d[i])
+
+
+
+#for i in range(3,19,2):# empieza por el 3 y termina en el 18, con salto de 2
+ #   print(listarandom[i])
+
+#funcion
+
+def suma(a,b):
+    return a+b
+
+suma(5,7)
+
+def saludo(nombre,edad):
+    return f"Hola {nombre}, tienes {edad} años"
+
+saludo("Juan",25)
