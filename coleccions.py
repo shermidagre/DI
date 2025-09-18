@@ -84,17 +84,6 @@ for i in d:
 
 
 
-#for i in range(3,19,2):# empieza por el 3 y termina en el 18, con salto de 2
- #   print(listarandom[i])
+for i in range(3,19,2):# empieza por el 3 y termina en el 18, con salto de 2
+   print(listarandom[i])
 
-#funcion
-
-def suma(a,b):
-    return a+b
-
-suma(5,7)
-
-def saludo(nombre,edad):
-    return f"Hola {nombre}, tienes {edad} años"
-
-saludo("Juan",25)
