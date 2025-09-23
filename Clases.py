@@ -1,6 +1,6 @@
 from symtable import Class
 
-
+"""
 class Persona:
     nombre = ""
     dni = ""
@@ -57,3 +57,87 @@ class Traballador(Persona, posto):
 
 t = Traballador("asda", 43, "123456789", 2000,"puto random","Trabajando","24 horas")
 print(t.formacion)
+"""
+
+
+
+class Persona3:
+
+    def __init__(self, nombre, edad, dni):
+        self.__nombre = nombre
+        self.__edad= self.setedad(edad)
+        self.__dni = dni
+
+    def setnombre(self, nombre):
+        self.__nombre = nombre
+
+    def getnombre(self):
+        return self.__nombre
+
+    def getedad(self):
+        return self.__edad
+
+    def setedad(self, id):
+        if id >=  0 and id < 100:
+            self.__edad = id
+        else:
+            self.__edad = 0
+
+    def getdni(self):
+        return self.__dni
+
+    def setdni(self, dni):
+        if isinstance(dni, str) and len(dni) == 9:
+            self.__dni = dni
+        else:
+            self.__dni = "ER"
+
+    nombre = property(getnombre,setnombre)
+    edad = property(getedad,setedad)
+    dni = property(getdni, setdni)
+
+t = Persona3("Juan", 25,"123456789")
+
+t.dni = "aposjdas"
+print(t.dni)
+
+"""
+
+class Persona2:
+    nombre = ""
+    dni = ""
+    edad = 0
+
+    def __init__(self, nombre, edad, dni, **outros):
+        self.nombre = nombre
+        self.edad=self.comprobaredad2(edad)
+        self.dni = dni
+
+  def comprobaredad2(self, edad):
+        if edad >=  0 and edad <= 100:
+            return edad
+        else:
+            return "Edad incorrecta"
+
+class posto2 :
+    def __init__(self,tarefa,horario,renumeracion,formacion, **outros):
+        self.tarefa = tarefa
+        self.horario = horario
+        self.renumeracion = renumeracion
+        self.formacion = formacion
+
+class Traballador2(Persona2, posto2):
+
+    def __init__(self, nombre, edad, dni, salario, formacion, tarefa, horario,NUSS):
+
+        super().__init__(nombre= nombre, edad=edad, dni=dni, tarefa = tarefa, horario=horario, formacion=formacion)
+        self.salario = salario
+        self.NUSS = NUSS
+
+
+
+
+ Traballador2 = Traballador2("asda", 43, "123456789", 2000,"puto random","Trabajando","",23)
+
+ print(Traballador2.formacion)
+"""
