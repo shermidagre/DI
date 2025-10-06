@@ -28,7 +28,7 @@ sql = """
 bd.execute(sql)
 
 
-#bd.execute("insert into profesores (id, nombre) ""VALUES (?, ?)", (1,"profe1"))
+bd.execute("""insert into profesores values (2,"profe2")""")
 
 
 
