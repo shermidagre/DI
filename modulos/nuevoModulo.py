@@ -1,5 +1,8 @@
 from modulos import empaquetado
 
+empaquetado.mensaje()
 
-print("nuevo"+ empaquetado.mensaje())
 
+empaquetado.m = "a"
+
+print( "nuevo mensaje de m : " + empaquetado.m )
