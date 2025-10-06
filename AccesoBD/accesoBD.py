@@ -18,26 +18,40 @@ try:
 except dbapi.StandartError:
     print("error al crear el cursor")
 
-
-bd.execute("""
-    CREATE TABLE IF NOT EXISTS usuarios (
+sql = """
+    CREATE TABLE IF NOT EXISTS profesores (
         id INTEGER PRIMARY KEY,
-        nombre TEXT
+        nombre varchar
     )
-""")
+"""
+
+bd.execute(sql)
 
 
-#bd.execute("insert into usuarios (id, nombre) ""VALUES (?, ?)", (3,"random3"))
+# bd.execute("insert into profesores (id, nombre) ""VALUES (?, ?)", (3,"profe1"))
 
 
 
 
 
-bd.execute("SELECT * FROM usuarios")
-resultados = bd.fetchall()
+bd.execute("select * from usuarios")
+usuarios = bd.fetchall()
+
+bd.execute("select * from profesores,usuarios")
+profesores = bd.fetchall()
+
 print("-----------------------------")
-print(resultados)
+
+print("=== PROFESORES ===")
+for p in profesores:
+    print(p)
+
+print("\n=== USUARIOS ===")
+for u in usuarios:
+    print(u)
+
 print("-----------------------------")
+
 
 
 
