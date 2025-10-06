@@ -18,17 +18,29 @@ try:
 except dbapi.StandartError:
     print("error al crear el cursor")
 
-sql = """
+print("-----------------------------")
+
+sqlprofesores = """
     CREATE TABLE IF NOT EXISTS profesores (
         id INTEGER PRIMARY KEY,
         nombre varchar
     )
 """
+sqlusuarios = """
+    CREATE TABLE IF NOT EXISTS usuarios (
+        id INTEGER PRIMARY KEY,
+        nombre text
+    )
+"""
+try:
+    bd.execute(sqlprofesores)
+    bd.execute(sqlusuarios)
+    print("tablas creadas")
+except dbapi.StandartError:
+    print("error al crear las tablas")
 
-bd.execute(sql)
 
-
-bd.execute("""insert into profesores values (2,"profe2")""")
+#bd.execute("""insert into profesores values (2,"profe2")""")
 
 
 
