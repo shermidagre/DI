@@ -28,7 +28,7 @@ sql = """
 bd.execute(sql)
 
 
-# bd.execute("insert into profesores (id, nombre) ""VALUES (?, ?)", (3,"profe1"))
+#bd.execute("insert into profesores (id, nombre) ""VALUES (?, ?)", (1,"profe1"))
 
 
 
@@ -37,20 +37,22 @@ bd.execute(sql)
 bd.execute("select * from usuarios")
 usuarios = bd.fetchall()
 
-bd.execute("select * from profesores,usuarios")
+bd.execute("select * from profesores")
 profesores = bd.fetchall()
 
 print("-----------------------------")
 
-print("=== PROFESORES ===")
+print("\n=== PROFESORES ===")
 for p in profesores:
     print(p)
+
+print("\n-----------------------------")
 
 print("\n=== USUARIOS ===")
 for u in usuarios:
     print(u)
 
-print("-----------------------------")
+print("\n-----------------------------")
 
 
 
