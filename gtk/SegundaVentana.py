@@ -47,6 +47,5 @@ class SegundaVentana(QMainWindow):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     ventana = SegundaVentana()
-
     sys.exit(app.exec())
 

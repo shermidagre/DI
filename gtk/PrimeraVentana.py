@@ -63,6 +63,5 @@ class VentanaPrincipal(QMainWindow):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     ventana = VentanaPrincipal()
-
     sys.exit(app.exec())
 
