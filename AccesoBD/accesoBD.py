@@ -69,6 +69,7 @@ print("\n-----------------------------")
 
 
 
+
 # Guardar los cambios
 bdd.commit()
 bdd.close()
