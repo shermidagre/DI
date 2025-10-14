@@ -31,9 +31,6 @@ class VentanaPrincipal(QMainWindow):
         btnOutraFiestra.clicked.connect(self.abrirventanahija)
         caixa.addWidget(btnOutraFiestra)
 
-
-
-
         container = QWidget()
         container.setLayout(caixa)
 

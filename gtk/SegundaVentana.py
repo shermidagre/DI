@@ -15,14 +15,11 @@ class SegundaVentana(QMainWindow):
         self.lblEtiqueta.setText("Segunda ventana:")
         self.lblEtiqueta.setStyleSheet("font-weight: bold; color: red;")
 
-        self.saudo = QLineEdit()
-
         btnSaudo = QPushButton("Abrir la ventana padre")
         btnSaudo.setStyleSheet("background-color: lightblue;")
         btnSaudo.clicked.connect(self.abrirventanapadre)
 
         caixa.addWidget(self.lblEtiqueta)
-        caixa.addWidget(self.saudo)
         caixa.addWidget(btnSaudo)
 
 
