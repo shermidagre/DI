@@ -26,7 +26,7 @@ class VentanaPrincipal(QMainWindow):
         caixa.addWidget(self.saudo)
         caixa.addWidget(btnSaudo)
 
-        btnOutraFiestra = QPushButton("Abrir otra ventana")
+        btnOutraFiestra = QPushButton("Abrir la ventana hija")
         btnOutraFiestra.setStyleSheet("background-color: lightgreen;")
         btnOutraFiestra.clicked.connect(self.abrirventanahija)
         caixa.addWidget(btnOutraFiestra)
@@ -55,7 +55,7 @@ class VentanaPrincipal(QMainWindow):
            self.lblEtiqueta.setStyleSheet("font-weight: bold; color: blue;")
            #Esperar 5 segundos e abrir a terceira ventana
 
-           QTimer.singleShot(2000, self.abrirterceiraventana)
+           QTimer.singleShot(2000, self.abrirventanasecreta)
 
 
 
@@ -65,7 +65,7 @@ class VentanaPrincipal(QMainWindow):
         self.sv = SegundaVentana()
         self.sv.show()
 
-    def abrirterceiraventana(self):
+    def abrirventanasecreta(self):
         self.hide()
         from VentanaSecreta import VentanaSecreta
         self.tv = VentanaSecreta()
