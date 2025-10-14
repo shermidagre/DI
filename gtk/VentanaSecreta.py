@@ -35,7 +35,7 @@ class VentanaSecreta(QMainWindow):
 
 
     def abrirventanapadre (self):
-        self.hide()
+        self.close()
         from PrimeraVentana import VentanaPrincipal
         self.vp = VentanaPrincipal()
         self.vp.show()

@@ -50,20 +50,21 @@ class VentanaPrincipal(QMainWindow):
         else:
            self.lblEtiqueta.setText(f"Ola, {nome}!")
            self.lblEtiqueta.setStyleSheet("font-weight: bold; color: green;")
-           #Esperar 5 segundos e abrir a terceira ventana
+
+           # con el q timer de pyqt6 abrimos la ventana secreta despues de 2 segundos
 
            QTimer.singleShot(2000, self.abrirventanasecreta)
 
 
 
     def abrirventanahija(self):
-        self.hide()
+        self.close()
         from SegundaVentana import SegundaVentana
         self.sv = SegundaVentana()
         self.sv.show()
 
     def abrirventanasecreta(self):
-        self.hide()
+        self.close()
         from VentanaSecreta import VentanaSecreta
         self.tv = VentanaSecreta()
         self.tv.show()
