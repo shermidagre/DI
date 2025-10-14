@@ -12,7 +12,7 @@ class SegundaVentana(QMainWindow):
         caixa = QVBoxLayout()
 
         self.lblEtiqueta = QLabel("Ola")
-        self.lblEtiqueta.setText("Segunda ventana:")
+        self.lblEtiqueta.setText("Esta es la segunda ventana")
         self.lblEtiqueta.setStyleSheet("font-weight: bold; color: red;")
 
         btnSaudo = QPushButton("Abrir la ventana padre")

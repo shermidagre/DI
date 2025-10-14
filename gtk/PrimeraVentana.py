@@ -49,7 +49,7 @@ class VentanaPrincipal(QMainWindow):
             self.lblEtiqueta.setText(""f"{nome}!")
         else:
            self.lblEtiqueta.setText(f"Ola, {nome}!")
-           self.lblEtiqueta.setStyleSheet("font-weight: bold; color: blue;")
+           self.lblEtiqueta.setStyleSheet("font-weight: bold; color: green;")
            #Esperar 5 segundos e abrir a terceira ventana
 
            QTimer.singleShot(2000, self.abrirventanasecreta)
