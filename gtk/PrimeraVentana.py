@@ -2,7 +2,7 @@
 import sys
 from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel, QLineEdit, QPushButton, QVBoxLayout, QWidget
-
+from PyQt6.QtCore import QTimer
 class VentanaPrincipal(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -53,12 +53,23 @@ class VentanaPrincipal(QMainWindow):
         else:
            self.lblEtiqueta.setText(f"Ola, {nome}!")
            self.lblEtiqueta.setStyleSheet("font-weight: bold; color: blue;")
+           #Esperar 5 segundos e abrir a terceira ventana
+
+           QTimer.singleShot(2000, self.abrirterceiraventana)
+
+
 
     def abrirventanahija(self):
         self.hide()
         from SegundaVentana import SegundaVentana
         self.sv = SegundaVentana()
         self.sv.show()
+
+    def abrirterceiraventana(self):
+        self.hide()
+        from VentanaSecreta import VentanaSecreta
+        self.tv = VentanaSecreta()
+        self.tv.show()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
