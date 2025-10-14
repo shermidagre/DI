@@ -14,6 +14,7 @@ class VentanaSecreta(QMainWindow):
         self.lblEtiqueta = QLabel("Ola")
         self.lblEtiqueta.setText("Estas en tu lugar secreto")
         self.lblEtiqueta.setStyleSheet("font-weight: bold; color: purple;")
+        self.lblEtiqueta.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
 
         btnSaudo = QPushButton("Abrir la ventana padre")

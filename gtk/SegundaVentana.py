@@ -14,6 +14,7 @@ class SegundaVentana(QMainWindow):
         self.lblEtiqueta = QLabel("Ola")
         self.lblEtiqueta.setText("Esta es la segunda ventana")
         self.lblEtiqueta.setStyleSheet("font-weight: bold; color: red;")
+        self.lblEtiqueta.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         btnSaudo = QPushButton("Abrir la ventana padre")
         btnSaudo.setStyleSheet("background-color: lightblue;")

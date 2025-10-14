@@ -12,8 +12,9 @@ class VentanaPrincipal(QMainWindow):
         caixa = QVBoxLayout()
 
         self.lblEtiqueta = QLabel("Ola")
-        self.lblEtiqueta.setText("Introduce tu nombre :")
+        self.lblEtiqueta.setText("Introduce tu nombre")
         self.lblEtiqueta.setStyleSheet("font-weight: bold; color: blue;")
+        self.lblEtiqueta.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.saudo = QLineEdit()
 
@@ -60,14 +61,14 @@ class VentanaPrincipal(QMainWindow):
     def abrirventanahija(self):
         self.close()
         from SegundaVentana import SegundaVentana
-        self.sv = SegundaVentana()
-        self.sv.show()
+        self.vh = SegundaVentana()
+        self.vh.show()
 
     def abrirventanasecreta(self):
         self.close()
         from VentanaSecreta import VentanaSecreta
-        self.tv = VentanaSecreta()
-        self.tv.show()
+        self.vs = VentanaSecreta()
+        self.vs.show()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
