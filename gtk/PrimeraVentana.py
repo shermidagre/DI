@@ -16,12 +16,15 @@ class VentanaPrincipal(QMainWindow):
         self.lblEtiqueta.setStyleSheet("font-weight: bold; color: blue;")
         self.lblEtiqueta.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
+
+
         self.saudo = QLineEdit()
 
         btnSaudo = QPushButton("Saludar")
         btnSaudo.setStyleSheet("background-color: lightblue;")
         btnSaudo.clicked.connect(self.saludar)
         self.saudo.returnPressed.connect(self.saludar)
+
 
         caixa.addWidget(self.lblEtiqueta)
         caixa.addWidget(self.saudo)

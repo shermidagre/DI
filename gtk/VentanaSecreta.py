@@ -22,6 +22,11 @@ class VentanaSecreta(QMainWindow):
         self.lblEtiqueta2.setStyleSheet("font-weight: bold; color: orange;")
         self.lblEtiqueta2.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
+        self.lblEtiqueta3 = QLabel("Ola3")
+        self.lblEtiqueta3.setText("este texto se puede esconder")
+        self.lblEtiqueta3.setStyleSheet("font-weight: bold; color: blue;")
+        self.lblEtiqueta3.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
         btnSaudo = QPushButton("Abrir la ventana padre")
         btnSaudo.setStyleSheet("background-color: lightblue;")
         btnSaudo.clicked.connect(self.abrirventanapadre)
@@ -36,10 +41,22 @@ class VentanaSecreta(QMainWindow):
             self.pasaramayusculas(self.lblEtiqueta2.text(), btnMayusculas)))
 
 
+
+        btnOcultarTexto = QPushButton("Boton Ocultar Texto")
+        btnOcultarTexto.setStyleSheet("background-color: yellow;")
+        btnOcultarTexto.setCheckable(True)
+        btnOcultarTexto.setChecked(True)
+
+        btnOcultarTexto.toggled.connect(lambda: self.lblEtiqueta3.setText(
+            self.ocultartexto(self.lblEtiqueta3.text(), btnOcultarTexto)))
+
+
+        caixa.addWidget(self.lblEtiqueta3)
         caixa.addWidget(self.lblEtiqueta2)
         caixa.addWidget(self.lblEtiqueta)
         caixa.addWidget(btnSaudo)
         caixa.addWidget(btnMayusculas)
+        caixa.addWidget(btnOcultarTexto)
 
         container = QWidget()
         container.setLayout(caixa)
@@ -64,6 +81,19 @@ class VentanaSecreta(QMainWindow):
             return texto.lower()
         else:
             return texto.upper()
+
+
+    def ocultartexto(self, texto, btnOcultarTexto=None):
+
+        if texto == "" :
+            return "No hay texto"
+
+        if btnOcultarTexto.isChecked():
+            return texto
+        else:
+            return "*" * len(texto)
+
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
