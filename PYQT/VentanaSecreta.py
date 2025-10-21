@@ -32,6 +32,7 @@ class VentanaSecreta(QMainWindow):
         btnSaudo.clicked.connect(self.abrirventanapadre)
 
 
+
         btnMayusculas = QPushButton("Boton Mayusculas/Minusculas")
         btnMayusculas.setStyleSheet("background-color: lightgray;")  # Corregido 'lightgrey' a 'lightgray'
         btnMayusculas.setCheckable(True)

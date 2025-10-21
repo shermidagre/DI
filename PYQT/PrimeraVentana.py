@@ -73,6 +73,7 @@ class VentanaPrincipal(QMainWindow):
         self.vs = VentanaSecreta()
         self.vs.show()
 
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     ventana = VentanaPrincipal()
