@@ -42,16 +42,8 @@ class ModeloTabla(QAbstractTableModel):
         # Ejemplo de icono: mostrar icono si valor es True
         if role == Qt.ItemDataRole.DecorationRole:
             if valor is True:
-                # Intenta cargar un ícono de verificación por su nombre temático estándar
-                icono_tema = QIcon.fromTheme("emblem-ok")  # Un nombre temático común para un "tic"
+                return QIcon("tic16x16.jpg")  # Icono estándar del sistema
 
-                if not icono_tema.isNull():
-                    # Si el motor de temas lo encuentra, devuelve el objeto QIcon
-                    return icono_tema
-                else:
-                    # Si no se encuentra, puedes usar un fallback, como cargar un archivo
-                    # o usar QStyle (como en el ejemplo de arriba)
-                    return QIcon("tic16x16.jpg")
         return None
 
 
