@@ -9,7 +9,6 @@ from PyQt6.QtCore import Qt
 class FormularioClientes(QWidget):
     def __init__(self):
         super().__init__()
-        # ⚠️ Nota: A janela é chamada "Exame 16-11-2023 grupo A" conforme a imagem.
         self.setWindowTitle("Exame 16-11-2023 grupo A")
         self.setGeometry(100, 100, 600, 500)
         self.initUI()
