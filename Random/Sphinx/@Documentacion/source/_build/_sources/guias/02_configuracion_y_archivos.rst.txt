@@ -35,9 +35,9 @@ Configuraciones Clave en `conf.py`
 *   **Información del Proyecto**:
     .. code-block:: python
 
-       project = 'Proyecto de Documentación Gemini'
-       copyright = '2026, Gemini CLI'
-       author = 'Gemini CLI'
+       project = 'Proyecto de Documentación Samuel'
+       copyright = 'Gemini CLI'
+       author = 'Gemini CLI el goat'
        release = '0.1'
        language = 'es'
 

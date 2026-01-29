@@ -65,7 +65,10 @@ Para compilar los ficheros ``.rst`` a HTML, se ejecuta ``sphinx-build`` **desde 
 .. code-block:: powershell
 
    # Ruta completa al ejecutable de sphinx-build
-   $sphinx_build = "C:\Users\samue\Documents\dam2\DI-VARIOS_\Random\Sphinx\.venv\Scripts\sphinx-build.exe"
-   & $sphinx_build -b html . _build
 
+    cd C:\Users\samue\Documents\dam2\DI-VARIOS_\Random\Sphinx\@Documentacion\source
+
+y luego
+
+    & "..\..\.venv\Scripts\sphinx-build.exe" -b html . _build
 Este comando se ejecuta cada vez que actualizas la documentación o el código para regenerar el sitio HTML.

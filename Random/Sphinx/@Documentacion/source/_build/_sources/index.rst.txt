@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Proyecto de Documentación Gemini
+Proyecto de Documentación
 ========================================
 
-Bienvenido a la documentación del Proyecto Gemini. Aquí encontrarás guías detalladas, referencias de API y comandos útiles para empezar.
+Bienvenido a la documentación del Proyecto. Aquí encontrarás guías detalladas, referencias de API y comandos útiles para empezar.
 
 .. toctree::
    :maxdepth: 2
