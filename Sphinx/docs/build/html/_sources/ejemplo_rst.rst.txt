@@ -133,7 +133,6 @@ Outra forma de definir bloques de código a anterior, mirao en :ref:`bloques-de-
 
      Esta liña precisa catro espazos
 
-.. image:: _static/equis16x216.jpg
 
 Este texto ten notas [#f1]_ para despois aclaralas no remate [#f2]_ do documento
 

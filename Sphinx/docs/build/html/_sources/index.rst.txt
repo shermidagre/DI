@@ -13,7 +13,9 @@ Documentacion de uso de Sphinx, escrito en
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contidos:
+   :caption: Contents:
 
-   usc
+   modules
+   api
    ejemplo_rst
+   usc
