@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+empaquetado_Samuel.egg-info/PKG-INFO
+empaquetado_Samuel.egg-info/SOURCES.txt
+empaquetado_Samuel.egg-info/dependency_links.txt
+empaquetado_Samuel.egg-info/top_level.txt
+fontes/paquete_exemplo_JorgeDC/MatOperacion.py
+fontes/paquete_exemplo_JorgeDC/__init__.py

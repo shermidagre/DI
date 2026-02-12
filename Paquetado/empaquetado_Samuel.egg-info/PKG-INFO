@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: empaquetado_Samuel
+Version: 0.0.1
+Summary: Un exemplo de empaquetado
+Author-email: Samuel <shermidagregores@danielcastelao.org>, outro <outro@gamil.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/shermidagre
+Classifier: Programming Language :: Python ::3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# Proxecto de empaquetado
+
+Este é un proxec to simple de empaquetado.
