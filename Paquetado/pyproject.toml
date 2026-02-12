@@ -17,3 +17,6 @@ license-files = ["LICENSE"]
 
 [project.urls]
 Homepage = "https://github.com/shermidagre"
+
+[project.scripts]
+lanzador = "fontes.paquete_exemplo_Samuel.main:main"

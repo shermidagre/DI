@@ -1,0 +1,2 @@
+[console_scripts]
+lanzador = fontes.paquete_exemplo_Samuel.main:main

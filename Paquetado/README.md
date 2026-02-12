@@ -1,6 +1,3 @@
-Aquí tienes una plantilla de `README.md` (o un archivo `COMMANDS.md`) diseñada como "chuleta" para que no se te olviden los pasos.
-
-Puedes copiar y pegar este código en un archivo nuevo en tu proyecto:
 
 ```markdown
 # 📦 Guía de Comandos para Empaquetado Python
@@ -74,6 +71,34 @@ En PowerShell puedes hacerlo rápido con:
 
 ```powershell
 Remove-Item -Recurse -Force dist, build, *.egg-info
+
+```
+
+
+## 6. Instalación en Modo Desarrollo
+Para no tener que reinstalar el paquete cada vez que edites un archivo `.py`, usa el flag `-e` (editable):
+
+```powershell
+pip install -e .
+
+```
+
+¿Qué hace esto? Crea un enlace simbólico en tu entorno virtual hacia tu carpeta de trabajo. Si cambias un print o una lógica en MatOperacion.py, el comando lanzador usará el código nuevo al instante.
+
+## 2. El Comando lanzador
+
+El comando lanzador está configurado en el archivo pyproject.toml y funciona como un acceso directo a la lógica principal de tu aplicación.
+
+Requisitos para que funcione:
+Estructura en pyproject.toml: Debe apuntar a la ruta completa: fontes.paquete_exemplo_Samuel.main:main.
+
+Función main: El archivo main.py debe tener una función definida como def main():.
+
+Cómo ejecutarlo:
+Simplemente escribe en cualquier parte de tu terminal (con el entorno virtual activado):
+
+```powershell
+lanzador
 
 ```
 
